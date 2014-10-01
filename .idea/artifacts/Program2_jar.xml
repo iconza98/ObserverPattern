@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Program2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Program2_jar</output-path>
+    <root id="archive" name="Program2.jar">
+      <element id="module-output" name="ObserverPattern" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/AverageReport.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/LocalStocks.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/Main.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/Observer.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/PriceChangeReport.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/SelectionReport.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/Subject.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/Ticker.dat" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/TickerInfo.java" />
+    </root>
+  </artifact>
+</component>
