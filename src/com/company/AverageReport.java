@@ -4,7 +4,6 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
@@ -12,7 +11,7 @@ import java.util.TreeMap;
 /**
  * Created by ikanisamani on 9/30/14.
  */
-public class AverageReport extends Observer {
+public class AverageReport implements iObserver {
 
     private String time;
     private String data;

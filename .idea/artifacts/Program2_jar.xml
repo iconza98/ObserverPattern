@@ -6,10 +6,10 @@
       <element id="file-copy" path="$PROJECT_DIR$/src/com/company/AverageReport.java" />
       <element id="file-copy" path="$PROJECT_DIR$/src/com/company/LocalStocks.java" />
       <element id="file-copy" path="$PROJECT_DIR$/src/com/company/Main.java" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/Observer.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/iObserver.java" />
       <element id="file-copy" path="$PROJECT_DIR$/src/com/company/PriceChangeReport.java" />
       <element id="file-copy" path="$PROJECT_DIR$/src/com/company/SelectionReport.java" />
-      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/Subject.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/com/company/iSubject.java" />
       <element id="file-copy" path="$PROJECT_DIR$/src/Ticker.dat" />
       <element id="file-copy" path="$PROJECT_DIR$/src/com/company/TickerInfo.java" />
     </root>

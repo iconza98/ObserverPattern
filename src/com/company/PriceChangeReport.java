@@ -12,7 +12,7 @@ import java.util.TreeMap;
 /**
  * Created by ikanisamani on 9/30/14.
  */
-public class PriceChangeReport extends Observer {
+public class PriceChangeReport implements iObserver {
 
     private String time;
     private ArrayList<String> data = new ArrayList<String>();

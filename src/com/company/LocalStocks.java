@@ -3,7 +3,6 @@ package com.company;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -13,27 +12,27 @@ import java.util.regex.Pattern;
 /**
  * Created by ikanisamani on 9/30/14.
  */
-public class LocalStocks extends Subject {
+public class LocalStocks implements iSubject {
 
-    private ArrayList<Observer> observerList = new ArrayList<Observer>();
+    private ArrayList<iObserver> observerList = new ArrayList<iObserver>();
     private HashMap<String,TickerInfo> dataMap = new HashMap<String, TickerInfo>();
     private ArrayList<ArrayList<String>> tickerListList = new ArrayList<ArrayList<String>>();
     public String lastUpdateTime = "";           // change to private after testing
 
 
     @Override
-    public void addObserver(Observer o) {
+    public void addObserver(iObserver o) {
         observerList.add(o);
     }
 
     @Override
-    public void removeObserver(Observer o) {
+    public void removeObserver(iObserver o) {
         observerList.remove(o);
     }
 
     @Override
     public void notifyObservers() {
-       for(Observer o : observerList){
+       for(iObserver o : observerList){
            o.update(lastUpdateTime, dataMap);
        }
     }
@@ -65,7 +64,9 @@ public class LocalStocks extends Subject {
             }
 
         }catch (FileNotFoundException e){
-            e.printStackTrace();
+            System.out.println("No file location for Ticker.dat given in command line arguments or " +
+                    "File is not found in working directory");
+            System.exit(-1);
         }
         catch(Exception e){
             e.printStackTrace();
